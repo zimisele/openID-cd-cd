@@ -20,4 +20,4 @@ jobs:
     - name: Deploy to EKS
       run: |
         kubectl get nodes
-        kubectl delete deploy nana
+        kubectl create deploy nana --image=nginx:alpine
